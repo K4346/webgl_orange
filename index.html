@@ -1,12 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>CG Lab 07</title>
-	<link rel="stylesheet" href="./style.css">
-	<script src="https://twgljs.org/dist/4.x/twgl-full.min.js"></script>
+    <meta charset="UTF-8">
+    <title>lab8</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
+            integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
+            crossorigin="anonymous" defer>
+    </script>
+
+    <script src="index.js" defer></script>
+
 </head>
 <body>
-	<canvas id="сanvas" style="width: 1200px; height: 800px;"></canvas>
-	<script src="./index.js"></script>
+    <div>
+        <canvas id="canvas" width="1280" height="660"></canvas>
+    </div>
+
+    <div>
+        
+        <input type="checkbox" id="ambientLightToggle" checked>
+        <label for="ambientLightToggle">Фоновый свет</label>
+
+        <input type="checkbox" id="spotlight1Toggle" checked>
+        <label for="spotlight1Toggle">Фонарь 1</label>
+
+        <input type="checkbox" id="spotlight2Toggle" checked>
+        <label for="spotlight2Toggle">Фонарь 2</label>
+    
+        <input type="checkbox" id="headlightsToggle" checked>
+    <label for="headlightsToggle">Фары</label>
+    </div>
+
+
+
+    <div>
+        <img src="./sprites/Orange.png" id="texOrange" wigth="0" height="0">
+
+    </div>
 </body>
-
-
-
+</html>
